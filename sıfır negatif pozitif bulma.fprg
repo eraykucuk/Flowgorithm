@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-20 05:39:20 &#214;S"/>
+        <attribute name="created" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMjA7MDU6MzY6NTIgw5ZTOzI3NDc="/>
+        <attribute name="edited" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMjA7MDU6Mzk6MjAgw5ZTOzE7Mjg1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s&#305;f&#305;r, pozitif, negatif, say&#305;" type="Integer" array="False" size=""/>
+            <output expression="&quot;say&#305; girin&quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <if expression="0&lt;say&#305;">
+                <then>
+                    <output expression="&quot;say&#305; pozitiftir&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="say&#305;==0">
+                        <then>
+                            <output expression="&quot;say&#305; 0'a e&#351;ittir&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;say&#305; negatiftir&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-22 10:54:28 &#214;S"/>
+        <attribute name="created" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMjI7MTA6Mzg6MzYgw5ZTOzI3NDk="/>
+        <attribute name="edited" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMjI7MTA6NTQ6Mjggw5ZTOzE7Mjg1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="harf, kelime, E" type="String" array="False" size=""/>
+            <assign variable="harf" expression="&quot;&quot;"/>
+            <assign variable="kelime" expression="&quot;&quot;"/>
+            <while expression="harf!=&quot;E&quot;">
+                <output expression="&quot;harf gir&quot;" newline="True"/>
+                <input variable="harf"/>
+                <if expression="Len(harf)&gt;1">
+                    <then>
+                        <output expression="&quot;tek karakter girin&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="&quot;E&quot;==harf">
+                            <then/>
+                            <else>
+                                <assign variable="kelime" expression="kelime&amp;harf"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="kelime" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

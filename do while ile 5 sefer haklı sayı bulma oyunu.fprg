@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-11 01:27:44 &#214;S"/>
+        <attribute name="created" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMTE7MTI6NDM6MTYgw5ZTOzI3NDM="/>
+        <attribute name="edited" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMTE7MDE6Mjc6NDQgw5ZTOzE7Mjg1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rasgele, tahmin, sayac" type="Integer" array="False" size=""/>
+            <assign variable="rasgele" expression="0"/>
+            <assign variable="sayac" expression="0"/>
+            <assign variable="tahmin" expression="0"/>
+            <assign variable="rasgele" expression="Random(100)"/>
+            <output expression="rasgele" newline="True"/>
+            <do expression="tahmin!=rasgele &amp;&amp; sayac!=5">
+                <assign variable="sayac" expression="sayac+1"/>
+                <input variable="tahmin"/>
+                <if expression="tahmin&lt;rasgele">
+                    <then>
+                        <if expression="sayac=5">
+                            <then/>
+                            <else>
+                                <output expression="&quot;daha b&#252;y&#252;k bir say&#305; gir&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="tahmin=rasgele">
+                            <then/>
+                            <else>
+                                <if expression="sayac=5">
+                                    <then/>
+                                    <else>
+                                        <output expression="&quot;daha k&#252;&#231;&#252;k bir say&#305; girin&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+            <if expression="sayac=5">
+                <then>
+                    <output expression="&quot;5 seferde bilemedi&#287;iniz i&#231;in kaybettiniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="rasgele &amp; &quot; say&#305;s&#305;n&#305; &quot; &amp; sayac &amp; &quot; seferde bildiniz &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

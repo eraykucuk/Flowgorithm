@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-20 05:33:15 &#214;S"/>
+        <attribute name="created" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMjA7MDU6MjU6MTIgw5ZTOzI3NDE="/>
+        <attribute name="edited" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMjA7MDU6MzM6MTUgw5ZTOzE7Mjg1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final" type="Integer" array="False" size=""/>
+            <assign variable="vize" expression="0"/>
+            <assign variable="final" expression="0"/>
+            <output expression="&quot;vize notunuzu giriniz y&#252;zde40 etkiler&quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;final notunuzu giriniz y&#252;zde60 etkiler&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="vize" expression="vize*40/100"/>
+            <assign variable="final" expression="final*60/100"/>
+            <if expression="vize+final&gt;=60">
+                <then>
+                    <output expression="&quot;dersten ge&#231;tiniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;dersten ge&#231;emediniz&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

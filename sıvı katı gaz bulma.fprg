@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-18 09:47:40 &#214;S"/>
+        <attribute name="created" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMTg7MDk6NDI6Mjcgw5ZTOzI3NTc="/>
+        <attribute name="edited" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMTg7MDk6NDc6NDAgw5ZTOzE7Mjg2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s&#305;cakl&#305;k, kat&#305;, s&#305;v&#305;, gaz" type="Integer" array="False" size=""/>
+            <assign variable="s&#305;cakl&#305;k" expression="0"/>
+            <output expression="&quot;maddenin s&#305;cakl&#305;&#287;&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="s&#305;cakl&#305;k"/>
+            <if expression="s&#305;cakl&#305;k&lt;=0">
+                <then>
+                    <output expression="&quot;madde kat&#305;d&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="s&#305;cakl&#305;k&lt;100">
+                        <then>
+                            <output expression="&quot;madde s&#305;v&#305;d&#305;r&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;madde gazd&#305;r&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

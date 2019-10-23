@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-18 09:56:30 &#214;S"/>
+        <attribute name="created" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMTg7MDk6NTE6MzYgw5ZTOzI3NTc="/>
+        <attribute name="edited" value="cGM7REVTS1RPUC1NVEJVRUNVOzIwMTktMTAtMTg7MDk6NTY6MzAgw5ZTOzE7Mjg2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <output expression="&quot;iki say&#305;dan birini girin&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;di&#287;erini girin&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="a &amp;&quot; say&#305;s&#305; &quot; &amp; b &amp; &quot; say&#305;s&#305;ndan b&#252;y&#252;k&#252;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="b &amp; &quot; say&#305;s&#305; &quot;&amp; a &amp; &quot; say&#305;s&#305;ndan b&#252;y&#252;kt&#252;r &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
